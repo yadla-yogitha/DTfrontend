@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 10;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links .icon {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    background-color: #3683f0;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.nav-links .profile{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+}
+/* Vertical Collapsed Left Menu */
+.left-menu {
+    position: fixed;
+    top: 60px; /* Start below the header */
+    left: 0px;
+    width: 60px;
+    height: calc(70% - 60px); /* Adjust height below the header */
+    background-image: linear-gradient(black 12%,white 10%);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 9;
+    color: white;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow:2px 2px #dfe2e5;
+}
+
+.left-menu.expanded {
+    width: 300px;
+}
+
+.left-menu .menu-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+}
+
+.left-menu.expanded .menu-toggler {
+    right: 10px;
+}
+
+.left-menu .menu-content {
+    padding: 20px;
+    display: none;
+}
+
+.left-menu.expanded .menu-content {
+    display: block;
+}
+
+.menu-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.menu-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+}
+
+.menu-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Vertical Right Collapsed Menu */
+.right-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 60px;
+    height: calc(50% - 60px); /* Adjust height below the header */
+    background-color: #343a40;
+    transition: width 0.3s ease;
+    z-index: 9;
+    overflow: hidden;
+    color: white;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.right-menu.expanded {
+    width: 300px;
+}
+
+.right-menu .menu-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.right-menu.expanded .menu-toggler {
+    left: 10px;
+}
+
+.right-menu .menu-content {
+    padding: 20px;
+    display: none;
+}
+
+.right-menu.expanded .menu-content {
+    display: block;
+    padding: 20px;
+}
+
+.menu-content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.notice-board-text .a{
+    font-size:30px;
+}
+.notice-board-text {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 30px;  /* Increased space from the cross icon */
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Arrange letters vertically */
+    align-items: center;  /* Center the letters */
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 60px; /* Start below the header */
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+}
+.container .heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #3683f0;
+}
+.para{
+    background-color: #E9ECEF;
+    padding:15px;
+    margin: 30px;
+}
+.c{
+    background-image: linear-gradient(black 8%,white 5%);
+    height: 600px;
+    border-radius: 10px;
+    border-bottom: 0px;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+}
+.c h5{
+    color:#fff;
+    padding-top:10px ;
+} 
+.c p{
+    padding-top:10px;
+}
+.d{
+    box-shadow: 5px 5px 5px 5px rgb(203, 202, 202);
+}
+.c h6{
+    background-color: #ddd;
+    padding: 5px;
+}
+.c .dropdown a{
+    text-decoration: none;
+    color: #333;
+    box-shadow: 3px 3px 3px rgb(203, 202, 202);
+    padding:5px;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    border: #ddd;
+}
+.c label{
+    font-weight:bold;
+    font-size:25px;
+}
+input{
+    border: none;
+    box-shadow: 3px 3px 3px rgb(225, 223, 223);
+}
+.c .container p span{
+    margin-left:20px;
+}
+.c .container p span i{
+    margin-top:15px;
+}
+.c .container p textarea{
+    box-shadow: 3px 3px 3px rgb(225, 223, 223);
+}
+.left-menu.expanded ~ .main-content {
+    margin-left: 300px;
+}
+
+.right-menu.expanded ~ .main-content {
+    margin-right: 300px;
+}
+
+.bottom-right-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.bottom-right-icons .icon {
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.bottom-right-icons .icon:hover {
+    background-color: #0056b3;
+}
+
+.bottom-right-icons .icon i {
+    font-size: 20px;
+}

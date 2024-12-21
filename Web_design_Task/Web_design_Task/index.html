@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="icon"><i class="fa fa-home"></i></a>
+            <a href="#" class="icon"><i class="fa fa-tools"></i></a>
+            <a href="#" class="icon"><i class="fa fa-bell"></i></a>
+            <a href="#"><img src="assets/img/profile.jpeg" class="profile" alt=""></a>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+        </nav>
+    </header>
+
+    <!-- Vertical Collapsed Left Menu -->
+    <div class="left-menu" id="leftMenu">
+        <div class="menu-toggler" id="leftMenuToggler">
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="menu-content">
+            <h2>Journey Board</h2>
+            <ul>
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure your pointers</li>
+                <li>4SA Method</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Vertical Collapsed Right Menu -->
+    <div class="right-menu" id="rightMenu">
+        <div class="menu-toggler" id="rightMenuToggler">
+            <div class="notice-board-text">
+                <span><i class="fas fa-times a"></i></span><br>
+                <span>N</span>
+                <span>o</span>
+                <span>t</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <br>
+                <span>B</span>
+                <span>o</span>
+                <span>a</span>
+                <span>r</span>
+                <span>d</span>
+            </div>
+        </div>
+        <div class="menu-content">
+            
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-start">
+                        <div class="heading">Technical Project Management </div>
+                    </div>                 
+                    <div class="col-6 d-flex justify-content-end">
+                        <button class="btn btn-primary button">Submit Task</button>
+                    </div>
+                </div>
+            </div>
+            <div class="para">
+                <h3>Explore the world of management</h3>
+                <p>As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card c">
+                            <h5 class="card-title text-center">Tecnical Project Management <i class="fa-solid fa-circle-info"></i></h5>
+                            <div class="card-body">
+                                <p class="card-text"> <b>Description:</b> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p><hr>
+                                <img src="assets/img/card-1.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card c">
+                            <h5 class="card-title text-center">Threadbuild <i class="fa-solid fa-circle-info"></i></h5>
+                            <div class="card-body">
+                                <p class="card-text"><b>Description:</b> Watch the video and threadbuild, and jot out key threads while watching the video</p><hr>
+                                <h4 class="card-title text-center"><b>Thread A</b></h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card d">
+                                            <h6>Sub Thread 1</h6>
+                                            <div class="card-body">
+                                                <textarea name="" id="" placeholder="Enter Text Here"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card d">
+                                            <h6>Sub Thread 2</h6>
+                                            <div class="card-body">
+                                                <textarea name="" id="" placeholder="Enter Text Here"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container mt-5">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3 d-flex justify-content-start">
+                                            <i class="fa-solid fa-lightbulb fa-1x mx-2"></i>
+                                            <i class="fa-solid fa-message fa-1x mx-2"></i>
+                                            <i class="fa-solid fa-question fa-1x mx-2"></i>
+                                            <i class="fa-solid fa-flower fa-1x"></i>
+                                        </div>
+                                
+                                        <div class="col-md-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Select Categ
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                    <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                                    <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                                    <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                   Select Process
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                                    <li><a class="dropdown-item" href="#">Option A</a></li>
+                                                    <li><a class="dropdown-item" href="#">Option B</a></li>
+                                                    <li><a class="dropdown-item" href="#">Option C</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <button class="btn btn-primary">+ Sub Thread</button><br><br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card">
+                                            <h6>Summary for Thread 1</h6>
+                                            <div class="card-body">
+                                                <textarea name="" id="" placeholder="Enter Text Here" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <!-- Card 3 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card c">
+                            <h5 class="card-title text-center">Structure your Pointers <i class="fa-solid fa-circle-info"></i></h5>
+                            <div class="card-body">
+                                <p class="card-text"><b>Description:</b> Write a 300 - 400 word article from your thread . Publish your understanding and showcase your understanding to the entire world </p><hr>
+                                <label>Title</label><br>
+                                <input type="text" name="" id=""><br>
+                                <label>Content</label><br>
+                                <div class="container">
+                                    <p>file
+                                        <span>edit</span>
+                                        <span>View</span>
+                                        <span>Insert</span>
+                                        <span>Format</span>
+                                        <span>Tools</span>
+                                        <span>Help</span><br>
+                                        <span><i class="fa fa-arrow-left"></i></span>
+                                        <span><i class="fa fa-arrow-right"></i></span>
+                                        <span><i class="fa fa-maximize"></i></span>
+                                        <span><i class="fa-solid fa-ellipsis"></i></span><br>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card c">
+                            <h5 class="card-title text-center">4SA Method <i class="fa-solid fa-circle-info"></i></h5>
+                            <div class="card-body">
+                                <p class="card-text"><b>Description:</b> To Explore more read more </p>
+                                <div class="container mt-5">
+                                    <h6>
+                                        <b>Introduction</b> 
+                                    </h6>
+                                    <p class="text-center">
+                                        This is a simple container with a heading and description. The content here explains what the website is about and provides a welcoming message.
+                                    </p>
+                                </div>
+                                <div class="container mt-5">
+                                    <h6>
+                                        <b>Thread A</b> 
+                                    </h6>
+                                    <p class="text-center">
+                                        How are you going to develop your stratergy ? Which method are you going to use to develop a stratergy ? What if the project is lengthy?
+                                    </p>
+                                </div>
+                                <div class="container mt-5">
+                                    <h6>
+                                        <b>Example 1</b>
+                                    </h6>
+                                    <p class="text-center">
+                                        You have a concept , How will you put into progress?                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <div class="bottom-right-icons">
+        <div class="icon" id="meetingIcon">
+            <i class="fas fa-video"></i>
+        </div>
+        <div class="icon" id="calendarIcon" style="display: none;">
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="icon" id="questionIcon" style="display: none;">
+            <i class="fas fa-question-circle"></i>
+        </div>
+    </div>
+    <script>
+
+        const leftMenu = document.getElementById('leftMenu');
+        const leftMenuToggler = document.getElementById('leftMenuToggler');
+        leftMenuToggler.addEventListener('click', () => {
+            leftMenu.classList.toggle('expanded');
+            const icon = leftMenuToggler.querySelector('i');
+            icon.classList.toggle('fa-arrow-right');
+            icon.classList.toggle('fa-arrow-left');
+        });
+
+        const rightMenu = document.getElementById('rightMenu');
+        const rightMenuToggler = document.getElementById('rightMenuToggler');
+        rightMenuToggler.addEventListener('click', () => {
+            rightMenu.classList.toggle('expanded');
+        });
+
+        const meetingIcon = document.getElementById('meetingIcon');
+        const calendarIcon = document.getElementById('calendarIcon');
+        const questionIcon = document.getElementById('questionIcon');
+
+        setTimeout(() => {
+            calendarIcon.style.display = 'flex';
+        }, 1000); 
+        setTimeout(() => {
+            questionIcon.style.display = 'flex';
+        }, 2000);
+    </script>
+</body>
+</html>
